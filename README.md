@@ -1,4 +1,4 @@
-Restaurant Menu app using React Js and Redux 
+Simple poc for given scenario (Restaurant Menu App) using React Js and Redux 
 =======================
 
 :bulb: Looking for React Js tutorial? [Click here](https://reactjs.org/).
