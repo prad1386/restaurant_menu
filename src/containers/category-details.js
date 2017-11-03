@@ -17,18 +17,18 @@ class CategoryDetail extends Component {
         jQuery("#category_" + this.props.category.cat_id).addClass("active_cat");
 
         //Store the selected meal under sub category(sub menu) to get access in order page
-        if(this.props.meal)
-          sessionStorage.setItem("selected_meal", JSON.stringify(this.props.meal));
+        if (this.props.meal)
+            sessionStorage.setItem("selected_meal", JSON.stringify(this.props.meal));
 
         //creates the sub category(sub menu) cards layout, selectMeal is the action triggered when meal card is clicked
         return this.props.category.sub_cat.map((meal, index) => {
             return (
                 <div key={index} className="col-md-3 col-lg-3 col-sm-3 col-xs-3 cards" onClick={() => this.props.selectMeal(meal)}>
-                <img src={meal.subcat_thumbnail} alt="meal pic" />
-                <div style={{ padding: '5px' }}>
-                    <label>{meal.subcat_name}</label>
-                    <p>{meal.subcat_desc}</p>
-                        <label style={{ right: '0', position: 'absolute', bottom: '0', marginRight: '20px',color: 'red'}}>{meal.subcat_price}</label>
+                    <img src={meal.subcat_thumbnail} alt="meal pic" />
+                    <div style={{ padding: '5px' }}>
+                        <label>{meal.subcat_name}</label>
+                        <p>{meal.subcat_desc}</p>
+                        <label style={{ right: '0', position: 'absolute', bottom: '0', marginRight: '20px', color: 'red' }}>{meal.subcat_price}</label>
                     </div>
                 </div>
             );
@@ -40,23 +40,23 @@ class CategoryDetail extends Component {
             return (<div> <h2 ><strong>Choose your meal</strong></h2><hr /><i>An Amazing Fusion of Flavours. Super Convenient. Pick among the categories on left menu.</i></div>);
         }
         //When category is selected but not the sub category or meal
-        if(!this.props.meal){
+        if (!this.props.meal) {
             return (
                 <div className="meal-cards">
                     <h3 style={{ marginLeft: '20px', backgroundColor: '#f9f9f9', padding: '5px' }}><strong>{this.props.category.cat_name}</strong></h3>
                     {this.createListItems()}
                 </div>
             );
-        }else{
+        } else {
             return (
                 <div className="meal-cards">
-                    <h3 style={{ marginLeft: '20px',backgroundColor: '#f9f9f9', padding: '5px' }}><strong>{this.props.category.cat_name}</strong><span className="pull-right" style={{fontSize:'16px',color:'green'}}><strong>Selected meal : </strong>{this.props.meal.subcat_name}</span></h3>
-                    <a className="btn btn-success pull-right" href="/order">Proceed</a>
+                    <h3 style={{ marginLeft: '20px', backgroundColor: '#f9f9f9', padding: '5px' }}><strong>{this.props.category.cat_name}</strong><span className="pull-right" style={{ fontSize: '16px', color: 'green' }}><strong>Selected meal : </strong>{this.props.meal.subcat_name}</span></h3>
+                    <a className="btn btn-success pull-right" href="/order">Checkout</a>
                     {this.createListItems()}
                 </div>
             );
         }
-       
+
     }
 }
 

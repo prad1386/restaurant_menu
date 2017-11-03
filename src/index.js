@@ -15,7 +15,7 @@ ReactDOM.render(
         <Router>
             <div>
                 <Route exact path="/" component={App} />
-                <Route path="/order" component={Order}/>
+                <Route path="/order" component={Order} />
             </div>
         </Router>
     </Provider>, document.getElementById('root')

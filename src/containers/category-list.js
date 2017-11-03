@@ -15,7 +15,7 @@ class CategoryList extends Component {
     createListItems() {
         return this.props.categories.map((category) => {
             return (
-                <li id={`category_${category.cat_id}`} key={category.cat_id} onClick={() => this.props.selectCategory(category)}> <img className="categoryPic" src={category.cat_thumbnail} alt="category pic"/><div><label>{category.cat_name}</label><p>{category.cat_desc}</p></div></li>
+                <li id={`category_${category.cat_id}`} key={category.cat_id} onClick={() => this.props.selectCategory(category)}> <img className="categoryPic" src={category.cat_thumbnail} alt="category pic" /><div><label>{category.cat_name}</label><p>{category.cat_desc}</p></div></li>
             );
         });
     }
