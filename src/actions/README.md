@@ -51,10 +51,10 @@ export default function () {
 All actions are automatically sent to **all** reducers. It is the reducers job to determine how to handle that action
 (can also just ignore it).
 
-# index.js 
+## index.js 
 
 This action is fired when main category is clicked on the left panel.
 
-# meal_selected.js
+## meal_selected.js
 
 This action is fired when some menu item is clicked under the main category. Sub category items. 

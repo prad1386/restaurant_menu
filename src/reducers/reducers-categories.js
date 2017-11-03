@@ -1,3 +1,7 @@
+/**
+ * Sample json data for poc, contains main category of dishes, sub category under those categories.
+ * Sample images & desc are from the Box8 online food ordering site [https://box8.in/menu]
+ */
 export default () => {
     return [
         {
