@@ -5,10 +5,6 @@ Simple poc for given scenario (Restaurant Menu App) using React Js and Redux
 
 :bulb: Looking for Redux tutorial? [Click here](http://redux.js.org/).
 
-:bulb: Looking for ES6 features? [Click here](http://es6-features.org/#Constants).
-
-:bulb: Looking for Node installation guide? [Click here](https://nodejs.org/en/).
-
 Simple poc for restaurant menu app, build using **React Js and Redux**.
 
 When I started this poc, my primary focus was on **simplicity** and **ease of use**.
