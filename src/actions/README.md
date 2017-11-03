@@ -31,7 +31,7 @@ Action creators are functions that create objects, actions are the objects that 
 export default function () {
     return {
        cat_id: 1,
-	   cat_name: "ABC",
+       cat_name: "ABC",
        cat_desc: "lorem ipsum"
     }
 }
@@ -50,3 +50,11 @@ export default function () {
 
 All actions are automatically sent to **all** reducers. It is the reducers job to determine how to handle that action
 (can also just ignore it).
+
+# index.js 
+
+This action is fired when main category is clicked on the left panel.
+
+#meal_selected.js
+
+This action is fired when some menu item is clicked under the main category. Sub category items. 
