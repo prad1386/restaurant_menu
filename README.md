@@ -1,9 +1,7 @@
 Simple poc for given scenario (Restaurant Menu App) using React Js and Redux 
 =======================
 
-:bulb: Looking for React Js tutorial? [Click here](https://reactjs.org/).
-
-:bulb: Looking for Redux tutorial? [Click here](http://redux.js.org/).
+:bulb: Looking for React Js tutorial? [Click here](https://reactjs.org/) or Redux tutorial? [Click here](http://redux.js.org/).
 
 Simple poc for restaurant menu app, build using **React Js and Redux**.
 
@@ -42,5 +40,5 @@ npm install
 # Then simply start your app
 npm start
 
-To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
 ```
+To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
