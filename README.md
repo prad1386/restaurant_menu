@@ -42,3 +42,17 @@ npm start
 
 ```
 To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
+
+Screen Shots
+---------------
+
+![](https://github.com/prad1386/restaurant_menu/blob/master/src/images/1.png)
+=======================
+
+![](https://github.com/prad1386/restaurant_menu/blob/master/src/images/2.png)
+=======================
+
+![](https://github.com/prad1386/restaurant_menu/blob/master/src/images/3.png)
+=======================
+
+![](https://github.com/prad1386/restaurant_menu/blob/master/src/images/4.png)
