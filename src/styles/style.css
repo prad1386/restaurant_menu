@@ -1,0 +1,26 @@
+.left-col{padding: 0;height:100vh;box-shadow: 3px 0 15px -5px #333;}
+.right-col{height:100vh;}
+img.categorybanner{width:100%;margin-bottom: 20px;}
+ul.category-list{padding-left: 0;}
+ul.category-list li{list-style: none;border-bottom: 1px solid #f1f1f1;padding:10px 5px;}
+ul.category-list li div{display: inline-block; margin-left: 10px;vertical-align: top;}
+ul.category-list li:hover{background-color: #ddd;cursor: pointer;}
+ul.category-list li label{margin: 0px;font-size: 18px;color:#538df5;cursor: pointer;}
+ul.category-list li p{font-size: 16px;margin: -5px 0;}
+.categoryPic{width:50px;height:50px;border-radius: 100px;}
+
+.meal-cards .cards{text-align: center;margin-bottom: 10px;overflow: hidden;position: relative; overflow: hidden;border: 1px solid #ddd;max-height: 400px;min-height: 400px;padding: 0;margin: 20px;border-radius: 5px;}
+.meal-cards .cards img{width: 100%;margin-bottom: 10px; -moz-transition: all 0.3s;-webkit-transition: all 0.3s; transition: all 0.3s;}
+.meal-cards .cards label{font-size: 16px; font-weight: bold; }
+.meal-cards .cards:hover img {
+    -moz-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+.meal-cards .cards:hover{cursor: pointer;box-shadow: 0 0 15px #333;}
+.active_cat{background-color: #ddd;}
+
+div.final-order{width: 500px;margin: auto;top: 0;bottom: 0;left: 0;right: 0;position: absolute;height: 500px;}
+.final-order img{border-radius: 10px;width: 100%;}
+.final-order label{font-size: 24px;margin-top: 10px;}
+.final-order p{font-size: 20px;color: red;}
