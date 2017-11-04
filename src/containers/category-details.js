@@ -23,7 +23,7 @@ class CategoryDetail extends Component {
         //creates the sub category(sub menu) cards layout, selectMeal is the action triggered when meal card is clicked
         return this.props.category.sub_cat.map((meal, index) => {
             return (
-                <div key={index} className="col-md-3 col-lg-3 col-sm-3 col-xs-3 cards" onClick={() => this.props.selectMeal(meal)}>
+                <div key={index} className="col-md-4 col-lg-3 col-sm-6 col-xs-12 cards" onClick={() => this.props.selectMeal(meal)}>
                     <img src={meal.subcat_thumbnail} alt="meal pic" />
                     <div style={{ padding: '5px' }}>
                         <label>{meal.subcat_name}</label>
@@ -35,7 +35,7 @@ class CategoryDetail extends Component {
         });
     }
     render() {
-        //When none of the category is selected
+        //When none of the category is selected, category == null
         if (!this.props.category) {
             return (<div> <h2 ><strong>Choose your meal</strong></h2><hr /><i>An Amazing Fusion of Flavours. Super Convenient. Pick among the categories on left menu.</i></div>);
         }
